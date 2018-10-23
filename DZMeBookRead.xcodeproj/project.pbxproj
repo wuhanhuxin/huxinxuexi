@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8065712C5DC773209D544D8E /* Pods_DZMeBookRead.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A2252384A47E9519D0EEAE9 /* Pods_DZMeBookRead.framework */; };
 		AF00E6DC1FDE8E2B00FC298B /* DZMReadAuxiliary.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF00E6DB1FDE8E2B00FC298B /* DZMReadAuxiliary.swift */; };
 		AF00E6DE1FDE8E3D00FC298B /* DZMCursorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF00E6DD1FDE8E3D00FC298B /* DZMCursorView.swift */; };
 		AF24C1471FDF7476000D82F1 /* DZMMagnifierView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF24C1461FDF7476000D82F1 /* DZMMagnifierView.m */; };
@@ -81,6 +82,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A019BD3F892902D12BA0044 /* Pods-DZMeBookRead.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DZMeBookRead.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DZMeBookRead/Pods-DZMeBookRead.debug.xcconfig"; sourceTree = "<group>"; };
+		7A9AC029C3D44B0768628090 /* Pods-DZMeBookRead.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DZMeBookRead.release.xcconfig"; path = "Pods/Target Support Files/Pods-DZMeBookRead/Pods-DZMeBookRead.release.xcconfig"; sourceTree = "<group>"; };
+		8A2252384A47E9519D0EEAE9 /* Pods_DZMeBookRead.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DZMeBookRead.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF00E6DB1FDE8E2B00FC298B /* DZMReadAuxiliary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DZMReadAuxiliary.swift; sourceTree = "<group>"; };
 		AF00E6DD1FDE8E3D00FC298B /* DZMCursorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DZMCursorView.swift; sourceTree = "<group>"; };
 		AF24C1451FDF7476000D82F1 /* DZMMagnifierView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZMMagnifierView.h; sourceTree = "<group>"; };
@@ -158,6 +162,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8065712C5DC773209D544D8E /* Pods_DZMeBookRead.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,6 +183,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E4D9756C7294FE2DAC57A80 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A2252384A47E9519D0EEAE9 /* Pods_DZMeBookRead.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		66BBE24F417BE35C82290EB8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A019BD3F892902D12BA0044 /* Pods-DZMeBookRead.debug.xcconfig */,
+				7A9AC029C3D44B0768628090 /* Pods-DZMeBookRead.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AF24C1441FDF7476000D82F1 /* DZMMagnifierView */ = {
 			isa = PBXGroup;
 			children = (
@@ -265,6 +287,8 @@
 				AF403E791E8CF598004C0612 /* DZMeBookReadTests */,
 				AF403E841E8CF598004C0612 /* DZMeBookReadUITests */,
 				AF403E631E8CF598004C0612 /* Products */,
+				66BBE24F417BE35C82290EB8 /* Pods */,
+				4E4D9756C7294FE2DAC57A80 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -437,9 +461,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF403E8A1E8CF598004C0612 /* Build configuration list for PBXNativeTarget "DZMeBookRead" */;
 			buildPhases = (
+				30638C684E1BC33CA70BF777 /* [CP] Check Pods Manifest.lock */,
 				AF403E5E1E8CF598004C0612 /* Sources */,
 				AF403E5F1E8CF598004C0612 /* Frameworks */,
 				AF403E601E8CF598004C0612 /* Resources */,
+				806410FA2725D18A09999BB8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -561,6 +587,81 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		30638C684E1BC33CA70BF777 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DZMeBookRead-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		806410FA2725D18A09999BB8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DZMeBookRead/Pods-DZMeBookRead-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftGifOrigin/SwiftGifOrigin.framework",
+				"${BUILT_PRODUCTS_DIR}/YYKit/YYKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftGifOrigin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DZMeBookRead/Pods-DZMeBookRead-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AF403E5E1E8CF598004C0612 /* Sources */ = {
@@ -770,6 +871,7 @@
 		};
 		AF403E8B1E8CF598004C0612 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A019BD3F892902D12BA0044 /* Pods-DZMeBookRead.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -792,6 +894,7 @@
 		};
 		AF403E8C1E8CF598004C0612 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A9AC029C3D44B0768628090 /* Pods-DZMeBookRead.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
